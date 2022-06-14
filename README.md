@@ -3,21 +3,21 @@
 Download this repository.  The `data` directory contains 2 JSON files, `articles.json` and `users.json`.
 
 For `articles`, each hash in the file contains:
-* id (a unique integer)
-* concepts (an array of short tag-like strings, which are the concepts that the article is about. The same concept can appear in many different articles.)
+* `id` - a unique integer
+* `concepts` - an array of short tag-like strings, which are the concepts that the article is about. The same concept can appear in many different articles.
 
 For `users`:
-* id (a unique integer)
-* read_article_ids (an array of the ids of articles that the user has read)
+* `id` - a unique integer
+* `read_article_ids` - an array of the ids of articles that the user has read
 
 Can you do the following?
 * write classes `Article` and `User`
     * objects of both classes should have an idmethod
-    * User objects should have a read_article_ids method
+    * User objects should have a `read_article_ids` method
     * Article objects should have a concepts method
-* write class methods Article.all and User.all that will produce the expected arrays of the corresponding objects
-* write methods Article.find(id:) and User.find(id:) that will quickly instantiate the indicated element
-* add a User.read_articles method that will return Article objects
+* write class methods `Article.all` and `User.all` that will produce the expected arrays of the corresponding objects
+* write methods `Article.find(id:)` and `User.find(id:)` that will quickly instantiate the indicated element
+* add a `User.read_articles` method that will return Article objects
 
 The following Ruby should help you parse the files:
 ```
