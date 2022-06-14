@@ -27,6 +27,7 @@ require 'json'
 USERS = JSON.parse(File.read('./data/users.json'), symbolize_names: true)
 ARTICLES = JSON.parse(File.read('./data/articles.json'), symbolize_names: true)
 ```
+This will create 2 global constant arrays, each of which is a hash with the following keys above.
 
 Feel free to write any other code or global constants etc. that you feel might help.
 
