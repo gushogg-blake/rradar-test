@@ -5,12 +5,10 @@ Download this repository.  The `data` directory contains 2 JSON files, `articles
 For `articles`, each hash in the file contains:
 * id (a unique integer)
 * concepts (an array of short tag-like strings, which are the concepts that the article is about. The same concept can appear in many different articles.)
-* possibly other fields such as title, content, etc., which aren’t directly relevant to the test
 
 For `users`:
 * id (a unique integer)
 * read_article_ids (an array of the ids of articles that the user has read)
-* possibly other fields such as first_name, last_name, email, etc., which aren't directly relevant to the test
 
 Can you do the following?
 * write classes `Article` and `User`
@@ -27,7 +25,7 @@ require 'json'
 USERS = JSON.parse(File.read('./data/users.json'), symbolize_names: true)
 ARTICLES = JSON.parse(File.read('./data/articles.json'), symbolize_names: true)
 ```
-This will create 2 global constant arrays, each of which is a hash with the following keys above.
+This will create 2 global constant arrays, each of which is a hash with the keys mentioned above.
 
 Feel free to write any other code or global constants etc. that you feel might help.
 
