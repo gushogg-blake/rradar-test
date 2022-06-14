@@ -47,3 +47,7 @@ Obviously, concepts which come up most often in a user’s read articles will be
 Each of an article's concepts could be of equal weight – and code which treats them this way is fine. 
 
 But if you want to get fancy, consider the possibility that the concepts most relevant to an article appear closest to the beginning of the article's concepts array
+
+# Additional Support
+
+Please let us know if you require any support in completing this task, including any reasonable adjustments.
