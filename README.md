@@ -24,8 +24,8 @@ Can you do the following?
 The following Ruby should help you parse the files:
 ```
 require 'json'
-USERS = JSON.parse(File.read('users.json'), symbolize_names: true)
-ARTICLES = JSON.parse(File.read('articles.json'), symbolize_names: true)
+USERS = JSON.parse(File.read('./data/users.json'), symbolize_names: true)
+ARTICLES = JSON.parse(File.read('./data/articles.json'), symbolize_names: true)
 ```
 
 Feel free to write any other code or global constants etc. that you feel might help.
