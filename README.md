@@ -40,6 +40,10 @@ Following this general line of development, we would like to see how close you c
     * the user hasn’t read
     * most closely matches the user’s interests
 
+## Submission
+
+When you are finished, add your modified files to a public repository, either on Github or Bitbucket
+
 # Notes:
 
 Obviously, concepts which come up most often in a user’s read articles will be concepts the user is most interested in.
