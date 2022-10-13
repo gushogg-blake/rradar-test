@@ -46,4 +46,18 @@ class User
 		
 		sorted.map{ |h| h[:concept] }
 	end
+	
+	def recommended_article
+		unread_articles = Article.all.select{ |article| !read_articles.include? article }
+		
+		favourite_concepts.each do |concept|
+			matching_article = unread_articles.find{ |article| article.concepts.include? concept }
+			
+			if matching_article
+				return matching_article
+			end
+		end
+		
+		nil
+	end
 end
